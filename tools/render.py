@@ -47,7 +47,9 @@ uniform sampler2D iChannel0;
 
 FRAGMENT_FOOTER = """
 void main() {
-    vec2 fragCoord = v_uv * iResolution.xy;
+    // Ghostty uses top-left fragCoord origin (y increases downward).
+    // Match it so shaders written for Ghostty render the same way here.
+    vec2 fragCoord = vec2(v_uv.x, 1.0 - v_uv.y) * iResolution.xy;
     vec4 fc;
     mainImage(fc, fragCoord);
     out_color = fc;
@@ -114,7 +116,6 @@ def render(shader_path: Path, output_path: Path, width: int, height: int, time_v
     prog["iTime"].value = float(time_value)
 
     term_data = make_terminal_sample(width, height)
-    term_data = np.flipud(term_data)  # PIL is top-down; GL textures are bottom-up
     tex = ctx.texture((width, height), 3, term_data.tobytes())
     tex.use(0)
     prog["iChannel0"].value = 0
