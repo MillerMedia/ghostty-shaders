@@ -1,7 +1,5 @@
 # 👻 Terminal Hauntings (Ghostty Shaders)
 
-![banner](previews/banner.png)
-
 A gallery of custom GLSL shaders for the [Ghostty](https://ghostty.org/) terminal.
 
 Ghostty supports Shadertoy-format fragment shaders as background effects via the `custom-shader` config option. This repo collects ones I've built, with a headless renderer script so each shader has a reproducible preview image.
