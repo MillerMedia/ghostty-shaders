@@ -1,6 +1,6 @@
-# 👻 Terminal Hauntings
+# 👻 Terminal Hauntings (Ghostty Shaders)
 
-![banner](previews/banner.jpeg)
+![banner](previews/banner.png)
 
 A gallery of custom GLSL shaders for the [Ghostty](https://ghostty.org/) terminal.
 
