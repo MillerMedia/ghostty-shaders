@@ -6,6 +6,14 @@ Ghostty supports Shadertoy-format fragment shaders as background effects via the
 
 ## Gallery
 
+### Comfy C
+
+A raymarched 3D version of the [comfy.org](https://comfy.org) logo — the chunky block-C with stepped corners — slowly rotating center-screen. Front and back faces render in yellow, side faces in an iridescent pink-blue-green gradient. At 16% opacity it sits just above the terminal contents without obscuring text. Tunables at the top of the file let you dial rotation speed, opacity, position, and size.
+
+![comfy-c preview](previews/comfy-c.png)
+
+- Shader: [`shaders/comfy-c.glsl`](shaders/comfy-c.glsl)
+
 ### White Bear
 
 A subtle breathing watermark of the [White Bear glyph](https://blackmirror.fandom.com/wiki/White_Bear_Symbol) from the Black Mirror episode. Centered, faint grey, ~10s opacity pulse. Designed to be unobtrusive enough to leave text crisp.

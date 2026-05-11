@@ -82,11 +82,11 @@ def make_terminal_sample(width: int, height: int) -> np.ndarray:
 
     lines: list[tuple[str, tuple[int, int, int]]] = [
         ("matt@ghostty ~/code/ghostty-shaders $ ls shaders/", prompt_color),
-        ("white-bear.glsl", fg),
-        ("matt@ghostty ~/code/ghostty-shaders $ cat shaders/white-bear.glsl | head -3", prompt_color),
-        ("// White Bear glyph — subtle breathing watermark", dim),
-        ("float sdBox(vec2 p, vec2 b) {", fg),
-        ("    vec2 d = abs(p) - b;", fg),
+        ("comfy-c.glsl    white-bear.glsl", fg),
+        ("matt@ghostty ~/code/ghostty-shaders $ cat shaders/comfy-c.glsl | head -3", prompt_color),
+        ("// Procedural Comfy \"C\" — slow rotating 3D logo,", dim),
+        ("// low-opacity background overlay.", dim),
+        ("#define ROTATION_PERIOD 32.0", fg),
         ("matt@ghostty ~/code/ghostty-shaders $ █", prompt_color),
     ]
 
