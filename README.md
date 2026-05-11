@@ -16,7 +16,7 @@ A raymarched 3D version of the [comfy.org](https://comfy.org) logo — the chunk
 
 ### White Bear
 
-A subtle breathing watermark of the [White Bear glyph](https://blackmirror.fandom.com/wiki/White_Bear_Symbol) from the Black Mirror episode. Centered, faint grey, ~10s opacity pulse. Designed to be unobtrusive enough to leave text crisp.
+A subtle breathing watermark of the [White Bear glyph](https://en.wikipedia.org/wiki/White_Bear_(Black_Mirror)#/media/File:White_Bear_Black_Mirror.svg) from the Black Mirror episode. Centered, faint grey, ~10s opacity pulse. Designed to be unobtrusive enough to leave text crisp.
 
 ![white-bear preview](previews/white-bear.png)
 
